@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seminars.css">
+    <title>Seminars and Workshops</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans','Poppins','Raleway', 'Optima Prime', Arial, Helvetica, sans-serif, myFirstFont;
+    background-color: #FEFAE7;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Goku.ttf);
+}
+
+nav{
+    background: #39362A;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    font-family: Optima;
+    z-index: 1000;
+}
+label.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 15px 7px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+.imglogo {
+    overflow-clip-margin: content-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 px;
+}
+nav ul li a{
+    color: #F3CD18;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 2px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a.active,a:hover{
+    background: #39362A;
+    transition: .5s;
+    color: #FEFAE7;
+    border-width: 10px;
+}
+.seminars{
+    padding-top: 8%;
+}
+.seminars h2{
+    font-family: myFirstfont;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.seminars img:hover{
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+.seminars .tesda h1{
+    font-family: optima;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+/* Define styles for the .tesda container */
+.tesda {
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    height: 100%;
+    background-color: #F3CD18;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+.tesda-certs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Adjust gap between images */
+    margin: 0 20px; /* Add margin to the left and right sides */
+}
+
+/* Style the images */
+.tesda-certs img {
+    max-width: 100%;
+    height: auto;
+}
+/*IGNITE*/
+
+.seminars .ignite h1{
+    font-family: optima;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.ignite{
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    height: 100%;
+    background-color: #F3CD18;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.ignite-certs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Adjust gap between images */
+    margin: 0 20px;
+}
+.ignite-certs img{
+    max-width: 100%;
+    height: auto;
+}
+.oracle{
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    height: fit-content;
+    background-color: #F3CD18;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.oracle-cert {
+    text-align: center; /* Center align the content */
+}
+.oracle-cert img{
+    max-width: 100%;
+    height: auto;
+    
+}
+.seminars .oracle h1{
+    font-family: optima;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+</style>
+<body>
+    <nav>
+        <div class="imglogo"><img src="img/roma.png"></div>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#skill">Skill Set</a></li>
+          <li><a href="index.html#sample">Sampled Work</a></li>
+          <li><a href="seminars.html">Seminars/Workshop Attended</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+<section id="seminar">
+    <div class="seminars">
+        <h2> Seminars and Workshops Attended</h2>
+        <div class="tesda">
+            <h1>TESDA CSS</h1>
+            <div class="tesda-certs">
+                <img src="img/TESDA1.png">
+                    <img src="img/TESDA2.png">
+                    <img src="img/TESDA3.png">
+                    <img src="img/TESDA4.png">
+                    <img src="img/TESDA5.png">
+                    <img src="img/TESDA6.png">
+            </div>
+        </div>
+        <div class="ignite">
+            <h1>IGNITE: Tech Talk 2023</h1>
+            <div class="ignite-certs">
+                <img src="img/tech1.jpg">
+                <img src="img/tech2.jpg">
+                <img src="img/tech3.jpg">
+            </div>
+        </div>
+        <div class="oracle">
+            <h1>Oracle Academy Certification</h1>
+            <div class="oracle-cert">
+                <img src="img/oracle.png">
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

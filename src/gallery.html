@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body { 
+            min-height: 100vh;
+            background: url("bg5.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url(Goku.ttf);
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .title {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-family: myFirstFont;
+            font-size: 50px;
+            text-align: center;
+            color: #c0392b;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        @media(max-width: 768px) {
+            .photo-gallery {
+                flex-direction: column;
+            }
+        }
+
+        nav {
+            background: #39362A;
+            height: 70px;
+            width: 100%;
+            position: fixed;
+            font-family: Optima;
+            text-decoration: none;
+        }
+
+        .imglogo {
+            float: left;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .imglogo img {
+            height: 50px;
+        }
+
+        nav ul{
+    float: right;
+    margin-right: 10px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 px;
+}
+nav ul li a{
+    color: #F3CD18;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 2px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+        a:hover, a:active {
+            background: #39362A;
+            transition: .5s;
+            color: #FEFAE7;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="imglogo"><img src="img/roma.png"></div>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="index.html#skill">Skill Set</a></li>
+          <li><a href="sample.html">Sampled Work</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="seminars.html#seminars">Seminars/Workshop Attended</a></li>
+          <li><a href="index.html#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery -->
+    <div class="container">
+        <h2 class="title">My Gallery</h2>
+        <div class="photo-gallery">
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/38.jpg" alt="Image 1">
+                </div>
+                <div class="photo">
+                    <img src="./img/40.jpg" alt="Image 3">
+                </div>
+                <div class="photo">
+                    <img src="./img/41.jpg" alt="Image 4">
+                </div>
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/42.jpg" alt="Image 5">
+                </div>
+                <div class="photo">
+                    <img src="./img/39.jpg" alt="Image 2">
+                </div>
+                <div class="photo">
+                    <img src="./img/35.jpg" alt="Image 35">
+                </div>
+                <div class="photo">
+                    <img src="./img/36.jpg" alt="Image 36">
+                </div>
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/43.jpg" alt="Image 11">
+                </div>
+                <div class="photo">
+                    <img src="./img/44.jpg" alt="Image 13">
+                </div>
+                <div class="photo">
+                    <img src="./img/14.jpg" alt="Image 14">
+                </div>
+                <div class="photo">
+                    <img src="./img/15.jpg" alt="Image 15">
+                </div>
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/16.jpg" alt="Image 16">
+                </div>
+                <div class="photo">
+                    <img src="./img/18.jpg" alt="Image 18">
+                </div>
+                <div class="photo">
+                    <img src="./img/19.jpg" alt="Image 19">
+                </div>
+                <div class="photo">
+                    <img src="./img/20.jpg" alt="Image 20">
+                </div>
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/22.jpg" alt="Image 22">
+                </div>
+                <div class="photo">
+                    <img src="./img/23.jpg" alt="Image 23">
+                </div>
+                <div class="photo">
+                    <img src="./img/24.jpg" alt="Image 24">
+                </div>
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/26.jpeg" alt="Image 26">
+                </div>
+                <div class="photo">
+                    <img src="./img/27.jpeg" alt="Image 27">
+                </div>
+                <div class="photo">
+                    <img src="./img/29.jpg" alt="Image 29">
+                </div>
+                <div class="photo">
+                    <img src="./img/30.jpg" alt="Image 30">
+                </div>
+                <div class="photo">
+                    <img src="./img/17.jpg" alt="Image 17">
+                </div>
+            </div>
+            <div class="column">
+                <div class="photo">
+                    <img src="./img/31.jpg" alt="Image 31">
+                </div>
+                <div class="photo">
+                    <img src="./img/32.jpg" alt="Image 32">
+                </div>
+                <div class="photo">
+                    <img src="./img/33.jpg" alt="Image 33">
+                </div>
+                <div class="photo">
+                    <img src="./img/34.jpg" alt="Image 34">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

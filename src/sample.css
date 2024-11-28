@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans','Poppins','Raleway', 'Optima Prime', Arial, Helvetica, sans-serif, myFirstFont;
+    background-color: #FEFAE7;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Goku.ttf);
+}
+
+nav{
+    background: #39362A;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    font-family: Optima;
+    z-index: 1000;
+}
+label.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 15px 7px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+.imglogo {
+    overflow-clip-margin: content-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 px;
+}
+nav ul li a{
+    color: #F3CD18;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 2px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a.active,a:hover{
+    background: #39362A;
+    transition: .5s;
+    color: #FEFAE7;
+    border-width: 10px;
+}
+.subject{
+    padding-top: 8%;
+}
+.subject h2{
+    font-family: myFirstfont;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 60px; /* Adjust gap between images */
+    margin: 0 20px;
+    position: absolute;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 15%;
+    margin-top: 40px;
+}
+
+.subject-container {
+    width: 200px;
+    height: 300px;
+    background-color: #39362A;
+    padding: 20px;
+    font-family: optima;
+    border-radius: 10px;
+    text-align: center; /* Center text horizontally */
+}
+
+.subject-container i {
+    font-size: 150px;
+    color: #F3CD18;
+}
+
+.subject-container h1 {
+    color: #FEFAE7;
+    margin-bottom: 10px;
+}
+
+.subject-container button {
+    width: 120px;
+    height: 30px;
+    background-color: #F3CD18;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.subject-container button:hover{
+    background-color: #FEFAE7;
+    color: #39362A;
+}
+

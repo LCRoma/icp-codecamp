@@ -1,5 +1,620 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+        <title>roma.</title>
+    </head>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans','Poppins','Raleway', 'Optima Prime', Arial, Helvetica, sans-serif, myFirstFont;
+    background-color: #FEFAE7;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Goku.ttf);
+}
+
+nav{
+    background: #39362A;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    font-family: Optima;
+    text-decoration: none;
+}
+
+label.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 15px 7px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+.imglogo {
+    overflow-clip-margin: content-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 px;
+}
+nav ul li a{
+    color: #F3CD18;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 2px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+a:hover,a:active{
+    background: #39362A;
+    transition: .5s;
+    color: #FEFAE7;
+    border-width: 10px;
+}
+nav ul li a:active{
+    color: #FEFAE7;
+}
+.homecon{
+    width: 100%;
+    overflow-x: hidden; 
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #39362A;
+    background-color: #FEFAE7;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    float: right;
+    position: absolute;
+    z-index: 2;
+  right: 15%; 
+  bottom: 90px;
+  }
+  
+  button:hover {
+    background-color: #FEBF00;
+    box-shadow: 0px 15px 20px rgba(13, 14, 14, 0.4);
+    color: #39362A;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+.about-container{
+    width: 100%;
+    height: 100%;
+    background-color: #F3CD18;
+}
+.me{
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.title{
+    font-family: myFirstFont;
+    font-size: 70px;
+    margin-top: 150px;
+    margin-left: 0%;
+    overflow: hidden;
+    float: left;
+    color: #39362A;
+}
+.about_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: -25%;
+    margin-left: 26%;
+    overflow: hidden;
+    float: left;
+    text-align: justify;
+    margin-right: 50px;
+}
+.details{
+    width: 70%;
+    height: 130px;
+    background-color: #39362A ;
+    float: left;
+    margin-top: -190px;
+    margin-left: 26%;
+    border-radius: 10px;
+    color: #FEFAE7;
+}
+.details p{
+    margin-left: 10px;
+    margin-top: 18px;
+}
+.details img{
+    float: right;
+    margin-top: -7%;
+    margin-right: 10px;
+}
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .typewriter h1 {
+    margin-left: 10px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    border-right: 0.10em solid #FEBF00;
+    animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .skill-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FEFAE7;
+}
+
+.skill_text {
+    font-family: 'myFirstFont';
+    font-size: 70px;
+    margin: 0;
+    padding-top: 6%;
+    color: #39362A;
+    text-align: center;
+}
+
+.hard, .soft {
+    width: 430px;
+    height: 430px;
+    background-color: #39362A;
+    color: #FEFAE7;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.hard {
+    margin: 10px 0 0 220px;
+}
+
+.soft {
+    margin: -425px 220px 0 auto;
+    float: right;
+}
+
+.hard h1, .soft h1 {
+    text-align: left;
+    font-family: 'Optima';
+    font-size: 40px;
+    margin-top: -15;
+}
+
+.skill_image, .skill_image2 {
+    overflow: hidden;
+}
+
+.skill_image img, .skill_image2 img {
+    width: 90px;
+}
+
+.skill_image2 {
+    float: left;
+    margin: 80px 0 0 -220px;
+    margin-top: 45;
+}
+
+.skill_p, .skill_p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.skill_p {
+    margin: 0;
+    padding-top: 3%;
+}
+
+.skill_p2 {
+    padding-top: 5%;
+    float: left;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 20px 0 0;
+    font-size: 14px;
+    color: #333;
+    gap: 50px;
+    padding-top: 1;
+}
+
+.educ_container{
+    width: 100%;
+    height: 100%;
+    background-color: #F3CD18;
+}
+.cards-container {
+    display: flex; /* Set container to flexbox */
+    padding-top: 5%;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Centering horizontally */
+}
+.educ_container .card {
+    width: 190px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    padding: 20px; /* Example padding */
+    width: 30%; /* Adjust card width as needed */
+    margin: 0 10px; /* Adjust the horizontal gap between cards */
+    box-sizing: border-box; 
+  }
+  .educ_text{
+    font-family: myFirstFont;
+    font-size: 70px;
+    margin-left: 0%;
+    padding-top: 6%;
+    overflow: hidden;
+    color: #39362A ;
+    text-align: center;
+}
+  
+  .educ_container .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .educ_container .card-image img{
+    width: 130px;
+    margin-left: 28%;
+  }
+  
+  .educ_container .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .educ_container .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .educ_container .category:hover {
+    cursor: pointer;
+  }
+  
+  .educ_container .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .educ_container .heading:hover {
+    cursor: pointer;
+  }
+  
+  .educ_container .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .educ_container .name {
+    font-weight: 600;
+  }
+  
+  .educ_container .name:hover {
+    cursor: pointer;
+  }
+
+.footer {
+    padding: 40px 0;
+    background-color: #FEBF00;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+
+}
+.social a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #39362A;
+    margin: 10px;
+    border-radius: 50%;
+    color: #FEFAE7;
+}
+.social a i{
+    font-size: 20px;
+    opacity: 0.9;
+}
+.social a:hover{
+    color:#FEBF00 ;
+    background-color: #FEFAE7;
+    transition: 0.5s;
+}
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 0;
+    text-align: center;
+    color: #39362A;
+    text-decoration: none;
+}
+
+.footer ul a {
+    color: inherit;
+    opacity: 0.8;
+    text-decoration: none;
+    background-color: #FEBF00;
+    margin: 10px;
+    color: #39362A;
+}
+.footer span {
+    font-weight: bold;
+}
+.footer ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    text-decoration: none;
+    background-color: none;
+    color: #FEFAE7;
+}
+.social a:hover {
+    text-decoration: none; 
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #39362A;
+    
+}
+
+.footer-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #39362A;
+}
+    </style>
+    <body>
+        <nav class="navigation">
+            <div class="imglogo">
+                <img src="img/roma.png">
+            </div>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skill">Skill Set</a></li>
+              <li><a href="gallery.html">gallery</a></li>
+              <li><a href="sample.html">Sample Worked</a></li>
+              <li><a href="seminars.html">Seminars/Workshop Attended</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="homecon">
+            <img src="img/SPACE.png">
+            <a href="#about">
+                <button type="button">About Me</button>
+              </a>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="me">
+                    <img src="img/abt.png" width="350px">
+                </div> 
+                <div class="title">
+                    about me
+                </div>
+                <div class="about_text">
+                    I'm Lorraine Roma, a 20-year-old from San Leonardo Nueva Ecija. Creativity defines me, driving my passion for graphic design since junior high. I trust my instincts in decision-making and express my feelings openly. Building connections is natural for me; I believe in voicing opinions and doing everything with passion for fulfillment.
+                </div>
+                <div class="details">
+                    <div class="typewriter">
+                        <h1>Lorraine | UI/UX</h1>
+                      </div>                      
+                    <p>
+                    +63 916-243-9947 <br>
+                    San Leonardo Nueva Ecija <br>
+                    </p>
+                    <img src="img/roma.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="educ_container">
+                <div class="educ_text">Education</div>
+                <div class="cards-container">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image"><img src="img/GNHS.png" alt=""></div>
+                            <div class="category"> Junior Highschool </div>
+                            <div class="heading"> Gulod National Highschool
+                                <div class="author"> Class of 2020</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-image"><img src="img/nssc.png" alt=""></div>
+                            <div class="category"> Senior Highschool </div>
+                            <div class="heading"> New Sinai Schools and Colleges Sta. Rosa Inc.
+                                <div class="author"> Class of 2022</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-image"><img src="img/au.png" alt=""></div>
+                            <div class="category"> Undergraduate </div>
+                            <div class="heading"> PHINMA Araullo University
+                                <div class="author"> Class of 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section id="skill">
+            <div class="skill-container">
+                <div class="skill_text">My SkillSet</div>
+                <div class="hard">
+                    <h1>Hard Skills</h1>
+                    <div class="skill_p">Information Technology Related</div>
+                    <div class="skill_image">
+                        <img src="img/1.png">
+                        <img src="img/2.png">
+                        <img src="img/3.png">
+                        <img src="img/6.png">
+                        <img src="img/10.svg">
+                        <img src="img/8.jpg">
+                        <img src="img/9.webp">
+                    </div>
+                    <div class="skill_p2">Graphic Design Related</div>
+                    <div class="skill_image2">
+                        <img src="img/4.png">
+                        <img src="img/5.png">
+                        <img src="img/7.png">
+                    </div>
+                </div>
+                <div class="soft">
+                    <h1>Soft Skills</h1>
+                    <div class="tags-container">
+                        <div class="tag">
+                            <div class="tag">#Management and Laadership</div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag">#Critical Thinking</div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag">#Teamwork</div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag">#Creativity</div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag">#Adaptability</div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag">#Problem-solving</div>
+                        </div>
+                        <div class="tag">
+                            <div class="tag">#Organization</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+
+        <section class="footer" id="contact">
+            <div class="footer-text"><h2>Contact Me</h2></div>
+            <div class="social">
+                <a href="https://www.facebook.com/lorraine.roma.9/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/wowaine_roma/?igsh=MjI0Mmgyb3VoNnRl "target="_blank" ><i class="fa fa-instagram"></i></a>
+                <div class="email">
+                    <span class="tooltip">loca.roma.au@phinmaed.com</span>
+                    <a href="mailto:loca.roma.au@phinmaed.com" target="_blank">
+                      <i class="fa fa-envelope-o"></i>
+                    </a>
+                  </div>
+                  
+                <a href="https://www.linkedin.com/in/lorraine-candelaria-roma-3b764b303/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/LorraineRo75820" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="footer">
+                <ul class="list">
+                    <li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skill">Skill Set</a></li>
+                        <li><a href="#sample">Sample Worked</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#seminar">Seminars/Workshop Attended</a></li>
+                  </ul>
+            </div>
+            <div class="copyright">
+                <p class="copyright"> <span>LORRAINE ROMA</span> ALL RIGHTS RESERVED FOR 2023</p>
+            </div>
+        </section>
+    </body>
+</html>
